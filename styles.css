@@ -36,3 +36,32 @@ body{
 }
 
 /* second design */
+
+.grid2{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    @media(min-width: 450px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media(min-width: 930px){
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media(min-width: 1200px){
+        grid-template-columns: repeat(4, 1fr)
+    }
+    @media(min-width: 1550px){
+        grid-template-columns: repeat(5, 1fr)
+    }
+}
+
+.grid2 .item{
+    background-color: #fff;
+    width: 12rem;
+    height: 5rem;
+    box-shadow: 1px 2px 3px #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
